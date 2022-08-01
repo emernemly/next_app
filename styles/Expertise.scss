@@ -1,0 +1,216 @@
+.expertise_container {
+  overflow: hidden;
+  .container_expertise {
+    .images {
+      position: relative;
+      height: fit-content;
+
+      .img-roue {
+        position: absolute;
+        left: 0;
+        height: 120%;
+        transform: translateX(-50%);
+        top: -10%;
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 4000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: spin;
+        -moz-animation-duration: 4000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: spin;
+        -ms-animation-duration: 4000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+
+        animation-name: spin;
+        animation-duration: 50000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      // .updown {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+
+      //   width: 100%;
+      .up {
+        width: 100%;
+        justify-content: center;
+
+        display: flex;
+        .img {
+          width: 70%;
+          img {
+            display: flex !important;
+          }
+        }
+      }
+      .down {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .img {
+          width: 60%;
+          margin-top: -30px;
+          height: auto !important;
+          span {
+            padding-top: 0 !important;
+          }
+          img {
+            position: relative !important;
+            height: auto !important;
+
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    .type-expetise {
+      display: flex;
+      flex-direction: column;
+
+      .type {
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        .svg-content {
+          text-align: center;
+          width: 100px;
+        }
+        h3 {
+          font-size: 22px;
+        }
+
+        .définition {
+          margin-left: 20px;
+          p {
+            font-size: 18px;
+            color: #afafaf;
+          }
+        }
+      }
+    }
+  }
+  .Num {
+    max-height: 130px;
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    font-size: 1vw;
+    padding: 5px;
+    z-index: 10;
+    width: 150px;
+  }
+
+  .svg-fonc {
+    width: 75px !important;
+    margin-right: 5px;
+  }
+
+  .img {
+    display: flex;
+    img {
+      border-radius: 30px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+  }
+  @media screen and (max-width: 638px) {
+    .container_expertise {
+      padding: 12px 0;
+      .expertise {
+        .discreption {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 499px) {
+    .container_expertise {
+      padding: 0;
+    }
+    .Num {
+      height: 89px !important;
+
+      margin: 5px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .container_expertise {
+      .discreption {
+        .title {
+          h2 {
+            font-size: 37px;
+            text-align: center;
+          }
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .type-expetise {
+        .type {
+          .définition {
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 361px) {
+    .down {
+      .img {
+        margin-top: -10px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 399px) {
+    .svg-content {
+      min-width: 54px !important;
+    }
+  }
+  @-ms-keyframes spin {
+    from {
+      -ms-transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

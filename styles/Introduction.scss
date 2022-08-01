@@ -1,0 +1,47 @@
+.introduction {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+
+  span {
+    display: contents;
+  }
+  .intro_video {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .imge {
+      position: relative !important;
+      clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0% 100%);
+      button {
+        position: absolute;
+        z-index: 10;
+        bottom: 20px;
+        background-color: transparent;
+        font-size: 100px;
+
+        padding: 0 !important;
+        left: 20px;
+        svg {
+          color: var(--clr-second);
+        }
+      }
+    }
+
+    iframe {
+      width: 100% !important;
+    }
+  }
+}
+.modal-content {
+  background-color: black !important;
+}
+.btn-close {
+  background-color: #fff !important;
+}
+@media screen and (max-width: 767px) {
+  .row {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,120 @@
+.NosValeurs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .NosValeurs-contant {
+    display: flex;
+    gap: 71px;
+    .image {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      img {
+        width: 750px;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .valeur-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    .description {
+      p {
+        font-size: 20px;
+        display: block;
+        color: #969393;
+      }
+    }
+    img {
+      margin-top: 30px;
+      width: 573px;
+      pointer-events: none;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .NosValeurs {
+    width: 100% !important;
+    .NosValeurs-contant {
+      width: 100%;
+      flex-direction: column-reverse;
+
+      .image {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .valeur-description {
+      width: 100% !important;
+      .description {
+        width: 100%;
+
+        p {
+          font-size: 15px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  /*Big smartphones [426px -> 600px]*/
+  .NosValeurs {
+    width: 100% !important;
+    .NosValeurs-contant {
+      width: 100%;
+      flex-direction: column-reverse;
+
+      .image {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .valeur-description {
+      width: 100% !important;
+      .description {
+        width: 100%;
+
+        p {
+          font-size: 18px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1273px) {
+  .NosValeurs {
+    width: 100%;
+    .NosValeurs-contant {
+      width: 100%;
+      .image {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .valeur-description {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

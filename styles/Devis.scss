@@ -1,0 +1,145 @@
+.Devis {
+  clip-path: polygon(0 0, 100% 21%, 100% 100%, 0% 100%);
+  background-color: var(--clr-primary);
+
+  width: 100%;
+  height: 550px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .discription {
+      position: relative;
+      z-index: 10;
+      width: 50%;
+      display: flex;
+      /* margin: auto; */
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 50px;
+      margin-top: 40px;
+      padding-left: 10%;
+      h3 {
+        font-size: clamp(14px, 8vw, 44px) !important;
+      }
+      p {
+        font-size: 22px;
+        margin: 12px 0;
+        color: #afafaf;
+        max-width: 300px;
+      }
+    }
+    .form {
+      position: relative;
+      z-index: 10;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      margin-top: 70px;
+      div {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 100%;
+        background: white;
+        color: grey;
+        border: none;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        height: 60px;
+      }
+      textarea {
+        width: 100%;
+        background: white;
+        color: grey;
+        border: none;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        // height: 60px;
+        outline: none;
+      }
+      .Np {
+        width: 100%;
+        display: flex;
+        input {
+          margin: 0 12px 0 0;
+        }
+        .prenom {
+          margin: 0;
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+.Devis::after {
+  content: '';
+  background-image: url('/img/architectural_background_contact.png');
+  z-index: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: left;
+}
+@media screen and (max-width: 991px) {
+  .Devis {
+    clip-path: none;
+    height: max-content;
+    div {
+      flex-direction: column;
+      .discription {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        /* margin: auto; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 50px;
+        margin-top: 40px;
+        padding-left: 10%;
+        p {
+          max-width: 100%;
+        }
+      }
+      .form {
+        width: 100%;
+        .Np {
+          .nom {
+            margin: 12px;
+          }
+        }
+        button {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 283px) {
+  .Devis {
+    div {
+      .discription {
+        h3 {
+          font-size: 43px;
+        }
+      }
+    }
+  }
+}

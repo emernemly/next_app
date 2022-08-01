@@ -1,0 +1,113 @@
+.actualites {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .rec-arrow:hover,
+  .rec-arrow:focus {
+    background: #d5d5d5 !important;
+    color: white;
+  }
+  .rec-carousel-wrapper {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .Actualites-contant {
+    display: flex !important;
+    max-width: 434px;
+    height: 480px;
+    flex-direction: column !important;
+    margin-bottom: 30px;
+    margin: 10px !important;
+    .card-img {
+      pointer-events: none;
+    }
+    .card-title:hover {
+      -webkit-text-decoration-line: underline; /* Safari */
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+    .info {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      bottom: 1%;
+      color: #4a4848;
+      .date {
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        svg {
+          display: inline;
+          width: 33px;
+          margin: auto;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: var(--clr-primary);
+        cursor: pointer;
+      }
+      a:hover {
+        color: var(--clr-second);
+      }
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .card-text {
+      color: #4a4848;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.subtitle {
+  width: 100%;
+  margin-top: 30px;
+  h2 {
+    color: #bc2431;
+    text-align: center;
+
+    padding-bottom: 22px;
+    svg {
+      width: 30px;
+      transform: translateY(-35%);
+    }
+  }
+}
+@media screen and (max-width: 1012px) {
+  .actualites {
+    .rec-carousel-wrapper {
+      max-width: 599px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .actualites {
+    .rec-arrow {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 357px) {
+  .actualites {
+    .Actualites-contant {
+      .info {
+        svg {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

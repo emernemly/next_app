@@ -1,0 +1,96 @@
+.domaines {
+  .back_icon {
+    width: 1200px !important;
+  }
+  display: flex !important;
+  width: 100% !important;
+  position: relative;
+  flex-direction: column !important;
+  border-radius: 15px !important;
+  margin-bottom: 30px;
+  min-height: 400px;
+  img {
+    pointer-events: none;
+  }
+  .card-title {
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    .card-text {
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+
+  ul {
+    color: #4a4848;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    li {
+      list-style: circle;
+    }
+  }
+}
+
+.all_carousel {
+  .rec-arrow:hover,
+  .rec-arrow:focus {
+    background: #d5d5d5 !important;
+    color: white;
+  }
+  .rec-carousel-wrapper {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .title {
+    width: 45% !important;
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+      display: flex;
+      color: var(--clr-second);
+      position: relative;
+
+      height: 150px;
+
+      padding-bottom: 22px;
+    }
+    .svg {
+      svg {
+        position: absolute;
+
+        right: -10px;
+        top: 0;
+      }
+    }
+    svg {
+      width: 40px;
+      margin: 40px 5px 0 0;
+    }
+  }
+}
+.domaine {
+  min-height: 400px;
+}
+
+@media screen and (max-width: 1012px) {
+  .all_carousel {
+    .rec-carousel-wrapper {
+      margin: auto;
+    }
+  }
+}
+
+// .rec-arrow:disabled,
+// .rec-arrow[disabled] {
+//   display: none;
+// }

@@ -1,0 +1,124 @@
+.NotreDemarche {
+  display: flex;
+  background-color: rgba(221, 224, 229, 0.2);
+  .NotreDemarche-contant {
+    display: flex;
+    align-items: center;
+    gap: 71px;
+    .contant {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        p {
+          font-size: 20px;
+          display: block;
+          color: #969393;
+          padding-bottom: 15px;
+        }
+      }
+      ul {
+        color: #535252;
+
+        li {
+          font-size: 20px;
+          margin: 0 0 12px 0;
+          font-weight: 500;
+        }
+      }
+    }
+    .image {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      img {
+        width: 700px;
+        pointer-events: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .NotreDemarche {
+    width: 100%;
+    .NotreDemarche-contant {
+      flex-direction: column;
+      width: 100%;
+      .contant {
+        width: 100%;
+        align-items: flex-start;
+
+        margin: 0 0 0 5%;
+        .description {
+          width: 100%;
+          h2 {
+            font-size: var(--txt-title) !important ;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        ul {
+          width: 100%;
+        }
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  /*Big smartphones [426px -> 600px]*/
+  .NotreDemarche {
+    width: 100%;
+    .NotreDemarche-contant {
+      flex-direction: column;
+      width: 100%;
+      .contant {
+        width: 100%;
+        align-items: flex-start;
+        padding: 1%;
+        .description {
+          width: 100%;
+
+          p {
+            font-size: 18px;
+          }
+        }
+        ul {
+          width: 100%;
+        }
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1273px) {
+  .NotreDemarche {
+    width: 100%;
+    .NotreDemarche-contant {
+      width: 100%;
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/*Tablets [601px -> 1200px]*/

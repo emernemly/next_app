@@ -1,0 +1,158 @@
+.presentation {
+  background-color: rgb(221 224 229 / 20%);
+  display: flex;
+  overflow: hidden;
+  .all-presentation {
+    display: flex;
+    flex-direction: row;
+    .presentation-contant {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        color: var(--clr-second);
+      }
+
+      .paragraphe {
+        width: 70%;
+        color: #969393;
+        padding-bottom: 15px;
+        font-size: 20px;
+        display: block;
+
+        .paragraphe-1 {
+          padding-bottom: 10px;
+          display: block;
+        }
+        .paragraphe-2 {
+          display: block;
+        }
+      }
+      ul {
+        color: #535252;
+        li {
+          font-size: 20px;
+          margin: 0 0 12px 0;
+          font-weight: 500;
+        }
+      }
+    }
+    .images {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+      .b {
+        position: relative;
+        width: 700px;
+        img {
+          pointer-events: none;
+        }
+        .a {
+          position: absolute;
+          bottom: -97px;
+          left: -52px;
+          width: 550px;
+          z-index: 10;
+          img {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .presentation {
+    width: 100%;
+    .all-presentation {
+      flex-direction: column;
+      width: 100%;
+      .presentation-contant {
+        width: 100%;
+        .paragraphe {
+          width: 90%;
+          font-size: 15px;
+        }
+
+        ul {
+          font-size: 15px;
+          width: 90%;
+        }
+      }
+      .images {
+        width: 100%;
+        .b {
+          width: 100%;
+
+          .a {
+            max-width: 487px !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  /*Big smartphones [426px -> 600px]*/
+  .presentation {
+    width: 100%;
+    .all-presentation {
+      flex-direction: column;
+      width: 100%;
+      .presentation-contant {
+        width: 100%;
+        .paragraphe {
+          width: 90%;
+          font-size: 18px;
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+
+        ul {
+          font-size: 20px;
+          width: 90%;
+        }
+      }
+      .images {
+        width: 100%;
+        .b {
+          img {
+            width: 100%;
+          }
+          .a {
+            img {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1273px) {
+  /*Tablets [601px -> 1200px]*/
+  .presentation {
+    .all-presentation {
+      width: 100%;
+      .images {
+        .b {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+          .a {
+            width: 100%;
+            img {
+              width: 79%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
